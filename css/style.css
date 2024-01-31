@@ -1,0 +1,37 @@
+@import "./header.css";
+@import "./nav.css";
+
+:root {
+  font-size: 16px;
+  user-select: none;
+  scroll-behavior: smooth;
+  --mainFont: "Roboto", sans-serif;
+  --secondaryFont: "Poppins", sans-serif;
+  --primaryColor: #1db5be;
+  --secondaryColor: #81818e;
+  --tertiaryColor: #fafafa;
+  --backgroundColor: #ededed;
+  --titleColor: #1c9aa1;
+}
+
+body {
+  margin: 0;
+  font-family: var(--secondaryFont);
+  font-size: 1rem;
+  background: var(--backgroundColor);
+}
+
+[class$="__wrapper"] {
+  max-inline-size: 75rem;
+  padding-inline: 1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}

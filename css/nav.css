@@ -1,0 +1,27 @@
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav__link {
+    text-transform: uppercase;
+    font-family: var(--secondaryFont);
+    font-weight: 600;
+    color: var(--secondaryColor);
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+
+  .nav__link:first-of-type {
+    color: var(--primaryColor);
+  }
+
+  .nav__link:hover {
+    color: var(--primaryColor);
+  }
+}
