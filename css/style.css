@@ -1,5 +1,7 @@
-@import "./header.css";
 @import "./nav.css";
+@import "./button.css";
+@import "./header.css";
+@import "./hero.css";
 
 :root {
   font-size: 16px;
@@ -7,6 +9,8 @@
   scroll-behavior: smooth;
   --mainFont: "Roboto", sans-serif;
   --secondaryFont: "Poppins", sans-serif;
+  --titleOne: 900 1.25rem/1.5 var(--mainFont);
+  --button: 700 0.875rem/1.2 var(--secondaryFont);
   --primaryColor: #1db5be;
   --secondaryColor: #81818e;
   --tertiaryColor: #fafafa;
@@ -19,6 +23,7 @@ body {
   font-family: var(--secondaryFont);
   font-size: 1rem;
   background: var(--backgroundColor);
+  color: var(--secondaryColor);
 }
 
 [class$="__wrapper"] {
@@ -34,4 +39,15 @@ img {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font: var(--titleOne);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--titleColor);
+  margin: 0;
 }
