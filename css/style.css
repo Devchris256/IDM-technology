@@ -4,6 +4,7 @@
 @import "./hero.css";
 @import "./section-image.css";
 @import "./section-simply.css";
+@import "./servicios.css";
 
 :root {
   font-size: 16px;
@@ -13,11 +14,13 @@
   --secondaryFont: "Poppins", sans-serif;
   --titleOne: 900 1.25rem/1.5 var(--mainFont);
   --titleTwo: 900 1.125rem/1.5 var(--mainFont);
+  --titleThree: 900 1rem/1.5 var(--mainFont);
   --button: 700 0.875rem/1.2 var(--secondaryFont);
   --primaryColor: #1db5be;
   --secondaryColor: #81818e;
   --tertiaryColor: #fafafa;
   --backgroundColor: #ededed;
+  --gray: #e2e2e2;
   --titleColor: #1c9aa1;
 }
 
@@ -26,7 +29,7 @@
 body {
   margin: 0;
   font-family: var(--secondaryFont);
-  font-size: 1rem;
+  font-size: 0.875rem;
   background: var(--backgroundColor);
   color: var(--secondaryColor);
 }
@@ -121,5 +124,27 @@ h3 {
 @media screen and (min-width: 1300px) {
   .titleTwo {
     font-size: 1.875rem;
+  }
+}
+
+.titleThree {
+  font: var(--titleThree);
+}
+
+@media screen and (min-width: 900px) {
+  .titleThree {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .titleThree {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .titleThree {
+    font-size: 1.5rem;
   }
 }

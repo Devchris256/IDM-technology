@@ -1,0 +1,43 @@
+.servicio {
+  border: 1px solid var(--gray);
+  border-radius: 1rem;
+  max-inline-size: 30.375rem;
+  margin: auto;
+  margin-block-end: 2.5rem;
+}
+
+.servicio__figure {
+  inline-size: 100%;
+  margin: 0;
+}
+
+.servicio__img {
+  inline-size: 100%;
+}
+
+.servicio__details {
+  padding: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 400px) {
+  .servicio__details {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servicio {
+    margin: 0;
+  }
+
+  .servicio__text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .servicio__details {
+    padding: 2rem;
+  }
+}
