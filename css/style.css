@@ -2,8 +2,8 @@
 @import "./button.css";
 @import "./header.css";
 @import "./hero.css";
-@import "./technology.css";
-@import "./customers.css";
+@import "./section-image.css";
+@import "./section-simply.css";
 
 :root {
   font-size: 16px;
@@ -20,6 +20,8 @@
   --backgroundColor: #ededed;
   --titleColor: #1c9aa1;
 }
+
+/* -----GLOBALES----- */
 
 body {
   margin: 0;
@@ -45,17 +47,79 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font: var(--titleOne);
-}
-
-h2 {
-  font: var(--titleTwo);
-}
-
 h1,
 h2,
 h3 {
   color: var(--titleColor);
   margin: 0;
+}
+
+/* CLASES GLOBALES */
+
+.titleOne {
+  font: var(--titleOne);
+}
+
+@media screen and (min-width: 500px) {
+  .titleOne {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .titleOne {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .titleOne {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .titleOne {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .titleOne {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .titleOne {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .titleOne {
+    font-size: 2.125rem;
+  }
+}
+
+.titleTwo {
+  font: var(--titleTwo);
+}
+
+@media screen and (min-width: 900px) {
+  .titleTwo {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .titleTwo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .titleTwo {
+    font-size: 1.875rem;
+  }
 }

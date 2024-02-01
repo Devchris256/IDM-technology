@@ -1,20 +1,20 @@
-.technology {
+.sectionImage {
   padding-block: 3rem;
   position: relative;
 }
 
-.technology__details {
+.sectionImage__details {
   text-align: center;
   max-inline-size: 25rem;
   margin: 0 auto;
   margin-block-end: 1.5rem;
 }
 
-.technology__text {
+.sectionImage__text {
   font-size: 0.875rem;
 }
 
-.technology__figure {
+.sectionImage__figure {
   margin: 0;
   max-inline-size: 37.5rem;
   margin: 0 auto;
@@ -23,17 +23,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  .technology {
+  .sectionImage {
     padding-block: 5rem;
   }
 
-  .technology__content {
+  .sectionImage__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
-  .technology__figure {
+  .sectionImage__figure {
     grid-column: 1/2;
     grid-row: 1;
     border-radius: 0 1rem 1rem 0;
@@ -44,7 +44,7 @@
     inset-inline-start: 0;
   }
 
-  .technology__details {
+  .sectionImage__details {
     grid-column: 2/-1;
     text-align: start;
     padding: 1.5rem;
@@ -53,52 +53,40 @@
   }
 
   @media screen and (min-width: 900px) {
-    .technology {
+    .sectionImage {
       padding-block: 7rem;
     }
 
-    .technology__figure {
+    .sectionImage__figure {
       block-size: 400px;
       inline-size: 50%;
       max-inline-size: none;
     }
 
-    .technology__img {
+    .sectionImage__img {
       object-fit: cover;
       block-size: 100%;
       inline-size: 100%;
     }
 
-    .technology__title {
-      font-size: 1.25rem;
-    }
-
     @media screen and (min-width: 1024px) {
-      .technology__title {
-        font-size: 1.5rem;
-      }
-
-      .technology__details {
+      .sectionImage__details {
         justify-self: flex-end;
         max-inline-size: 30.375rem;
         margin: 0 auto;
       }
 
-      .technology__text {
+      .sectionImage__text {
         font-size: 1rem;
       }
     }
 
     @media screen and (min-width: 1300px) {
-      .technology__title {
-        font-size: 1.875rem;
-      }
-
-      .technology__text {
+      .sectionImage__text {
         line-height: 2;
       }
 
-      .technology__details {
+      .sectionImage__details {
         margin: 0;
         justify-self: flex-end;
         padding: 0;

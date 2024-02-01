@@ -1,30 +1,31 @@
-.customers {
+.sectionSimply {
   padding-block: 1rem;
+  background: url(../imagenes/ellipse-1.png) no-repeat top left;
 }
 
-.customers__wrapper {
+.sectionSimply__wrapper {
   max-inline-size: 75rem;
   padding-inline: 1rem;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-.customers__wrapper--small {
+.sectionSimply__wrapper--small {
   max-inline-size: 52.5rem;
 }
 
-.customers__content {
+.sectionSimply__content {
   text-align: center;
 }
 
-.customers__text {
+.sectionSimply__text {
   font-size: 0.875rem;
   max-inline-size: 41.9375rem;
   margin: 0 auto;
   margin-block: 2rem;
 }
 
-.customers__logos {
+.sectionSimply__logos {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -32,7 +33,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .customers__logos {
+  .sectionSimply__logos {
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
@@ -40,44 +41,30 @@
 }
 
 @media screen and (min-width: 900px) {
-  .customers__title {
-    font-size: 1.25rem;
-  }
-
-  .customers__logos {
+  .sectionSimply__logos {
     justify-content: space-around;
   }
 
-  .customers__text {
+  .sectionSimply__text {
     font-size: 1rem;
     font-size: 1.5;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .customers {
+  .sectionSimply {
     padding-block: 3rem;
   }
 
-  .customers__title {
-    font-size: 1.5rem;
-  }
-
-  .customers__text {
+  .sectionSimply__text {
     line-height: 2;
   }
 
-  .customers__logos {
+  .sectionSimply__logos {
     justify-content: space-between;
   }
 
-  .customers__logo {
+  .sectionSimply__logo {
     inline-size: 200px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .customers__title {
-    font-size: 1.875rem;
   }
 }
