@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./technology.css";
+@import "./customers.css";
 
 :root {
   font-size: 16px;
