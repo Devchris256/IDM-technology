@@ -5,6 +5,7 @@
 @import "./section-image.css";
 @import "./section-simply.css";
 @import "./servicios.css";
+@import "./indicadores.css";
 
 :root {
   font-size: 16px;
@@ -16,12 +17,13 @@
   --titleTwo: 900 1.125rem/1.5 var(--mainFont);
   --titleThree: 900 1rem/1.5 var(--mainFont);
   --button: 700 0.875rem/1.2 var(--secondaryFont);
+  --titleColor: #1c9aa1;
   --primaryColor: #1db5be;
   --secondaryColor: #81818e;
   --tertiaryColor: #fafafa;
   --backgroundColor: #ededed;
   --gray: #e2e2e2;
-  --titleColor: #1c9aa1;
+  --white: #ffffff;
 }
 
 /* -----GLOBALES----- */

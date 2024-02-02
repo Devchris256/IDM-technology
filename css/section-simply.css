@@ -28,7 +28,7 @@
 .sectionSimply__logos {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
 }
 

@@ -15,7 +15,13 @@
 }
 
 @media screen and (min-width: 550px) {
-  .button {
+  .button.u-hero {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .button.u-section {
     align-self: flex-start;
   }
 }

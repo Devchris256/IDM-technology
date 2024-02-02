@@ -1,0 +1,59 @@
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  gap: 1rem;
+  max-inline-size: 20rem;
+  margin: auto;
+}
+
+.indicadores__indicador {
+  background: var(--white);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicadores__number {
+  margin: 0;
+  font-family: var(--mainFont);
+  font-size: 1.125rem;
+  color: var(--primaryColor);
+  font-weight: 900;
+}
+
+.indicadores__text {
+  text-align: center;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 700px) {
+  .indicadores {
+    align-self: flex-start;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .indicadores {
+    max-inline-size: none;
+    gap: 1.5rem;
+    grid-template-rows: repeat(2, 11em);
+  }
+
+  .indicadores__indicador {
+    border-radius: 2rem;
+  }
+
+  .indicadores__number {
+    font-size: 2rem;
+  }
+
+  .indicadores__text {
+    font-size: 1.125rem;
+  }
+}
