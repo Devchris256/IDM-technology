@@ -1,0 +1,88 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.team__rectangle {
+  flex: 1;
+  margin: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  block-size: 31.25rem;
+  background: #e4e4e4;
+  transition: flex 0.3s;
+  position: relative;
+}
+
+.team__rectangle:hover {
+  flex: 1.5;
+}
+
+.team__rectangleContent {
+  inline-size: 100%;
+  block-size: 100%;
+  position: relative;
+  filter: grayscale(100%);
+  transition: grayscale 0.3s;
+}
+
+.team__rectangleContent::before {
+  content: " ";
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    rgba(000, 000, 000, 0.7)
+  );
+  position: absolute;
+}
+
+.team__rectangleContent:hover {
+  filter: grayscale(0%);
+}
+
+.team__rectangleImg {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.team__details {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  position: absolute;
+  inset-block-end: 50px;
+  inset-inline-start: 50%;
+  color: var(--white);
+  transform: translateX(-50%) rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.team__rectangle:hover .team__details {
+  inset-inline-start: 24px;
+  transform: translateX(0) rotate(0deg);
+}
+
+.team__rectangleTitle {
+  font-family: var(--mainFont);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.team__rectangleRol {
+  font-size: 1.125rem;
+}
+
+.team__rectangleText {
+  display: none;
+}
+
+.team__rectangle:hover .team__rectangleText {
+  display: block;
+}

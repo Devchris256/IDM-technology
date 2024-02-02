@@ -1,6 +1,19 @@
 .sectionSimply {
   padding-block: 2rem;
-  background: url(../imagenes/ellipse-1.png) no-repeat top left;
+}
+
+.sectionSimply--equipo {
+  margin-block-start: 380px;
+}
+
+@media screen and (min-width: 700px) {
+  .sectionSimply--equipo {
+    margin-block-start: 0;
+  }
+
+  .sectionSimply {
+    padding-block: 4rem;
+  }
 }
 
 .sectionSimply__wrapper {
@@ -16,35 +29,18 @@
 
 .sectionSimply__content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .sectionSimply__text {
   font-size: 0.875rem;
   max-inline-size: 41.9375rem;
-  margin: 0 auto;
-  margin-block: 2rem;
-}
-
-.sectionSimply__logos {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-@media screen and (min-width: 600px) {
-  .sectionSimply__logos {
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-  }
+  margin: auto;
 }
 
 @media screen and (min-width: 900px) {
-  .sectionSimply__logos {
-    justify-content: space-around;
-  }
-
   .sectionSimply__text {
     font-size: 1rem;
     font-size: 1.5;
@@ -58,13 +54,5 @@
 
   .sectionSimply__text {
     line-height: 2;
-  }
-
-  .sectionSimply__logos {
-    justify-content: space-between;
-  }
-
-  .sectionSimply__logo {
-    inline-size: 200px;
   }
 }

@@ -1,10 +1,5 @@
 @import "./servicio.css";
 
-.servicios {
-  padding-block: 2rem;
-  text-align: center;
-}
-
 .servicios__wrapper {
   max-inline-size: 75rem;
   padding-inline: 1rem;
@@ -12,29 +7,17 @@
   margin: 0 auto;
 }
 
-.servicios__wrapper--small {
+.servicios {
   max-inline-size: 62.25rem;
-}
-
-.servicios__content {
-  margin-block-start: 3rem;
+  margin-block-start: 1rem;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   .servicios {
-    padding-block: 4rem;
-  }
-
-  .servicios__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 2rem;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .servicios {
-    padding-block: 8.25rem;
   }
 }
