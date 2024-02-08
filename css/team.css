@@ -1,6 +1,7 @@
 .team {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -11,8 +12,9 @@
   overflow: hidden;
   block-size: 31.25rem;
   background: #e4e4e4;
-  transition: flex 0.3s;
   position: relative;
+  transition: flex 0.3s ease;
+  min-width: 11.25rem;
 }
 
 .team__rectangle:hover {
