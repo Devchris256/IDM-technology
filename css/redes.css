@@ -1,0 +1,23 @@
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-inline-size: 24rem;
+  inline-size: 100%;
+  margin: auto;
+  margin-block-start: 2rem;
+}
+
+@media screen and (min-width: 378px) {
+  .redes {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .redes__img {
+    inline-size: 2rem;
+    block-size: 2rem;
+  }
+}
