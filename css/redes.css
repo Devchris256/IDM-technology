@@ -9,6 +9,19 @@
   margin-block-start: 2rem;
 }
 
+.redes--small {
+  max-inline-size: 10rem;
+  margin: 0;
+  padding-inline-start: 1rem;
+  margin-block: 1rem;
+  justify-content: space-between;
+}
+
+.redes__img--small {
+  inline-size: 1rem;
+  block-size: 1em;
+}
+
 @media screen and (min-width: 378px) {
   .redes {
     justify-content: space-between;
@@ -19,5 +32,10 @@
   .redes__img {
     inline-size: 2rem;
     block-size: 2rem;
+  }
+
+  .redes__img--small {
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
   }
 }

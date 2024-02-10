@@ -14,14 +14,33 @@
     font-weight: 600;
     color: var(--secondaryColor);
     font-size: 1rem;
-    transition: color 0.2s;
+    transition: color 0.2s, box-shadow 0.2s;
   }
 
-  .nav__link:first-of-type {
+  .nav__link--white {
+    color: var(--white);
+    padding: 0.5rem;
+  }
+
+  .nav__link:not(.nav__link--white):first-of-type {
     color: var(--primaryColor);
   }
 
-  .nav__link:hover {
+  .nav__link--white:first-of-type {
+    box-shadow: 0 3px 0 0 var(--primaryColor);
+  }
+
+  .nav__link:not(.nav__link--white):hover {
     color: var(--primaryColor);
+  }
+
+  .nav__link--white:hover {
+    box-shadow: 0 3px 0 0 var(--primaryColor);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .nav {
+    gap: 2rem;
   }
 }

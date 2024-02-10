@@ -1,0 +1,56 @@
+.footer {
+  background: url(../imagenes/imagen-grupo-9.jpg) no-repeat center/cover, red;
+  block-size: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.footer::before {
+  content: " ";
+  inline-size: 100%;
+  block-size: 100%;
+  background: rgba(000, 000, 000, 0.7);
+  position: absolute;
+}
+
+.footer__logoImg {
+  inline-size: 6.25rem;
+}
+
+.footer__content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__wrapper {
+  inline-size: 100%;
+}
+
+.footer__primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  display: none;
+}
+
+.footer__divider {
+  border: 1px solid var(--white);
+}
+
+.footer__copyrightText {
+  color: var(--white);
+  font-size: 1rem;
+  margin-block: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer__logoImg {
+    inline-size: 9.5rem;
+  }
+}
