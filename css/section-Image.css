@@ -1,6 +1,5 @@
 .sectionImage {
   position: relative;
-
   padding-block: 3rem;
 }
 
@@ -36,7 +35,6 @@
   border-radius: unset;
   overflow: unset;
 }
-
 @media screen and (min-width: 700px) {
   .sectionImage {
     padding-block: 5rem;
@@ -65,6 +63,13 @@
     inset-inline-start: unset;
   }
 
+  .sectionImage__figure--xx {
+    grid-column: 2/-1;
+    inset-inline-end: 0;
+    inset-inline-start: unset;
+    border-radius: 1rem 0 0 1rem;
+  }
+
   .sectionImage__details {
     grid-column: 2/-1;
     text-align: start;
@@ -76,6 +81,10 @@
 
   .sectionImage__details--indicadores {
     grid-column: 1/2;
+  }
+
+  .sectionImage__details--left {
+    grid-column: 1;
   }
 
   @media screen and (min-width: 900px) {
@@ -106,6 +115,10 @@
   }
 
   @media screen and (min-width: 1024px) {
+    .sectionImage {
+      min-block-size: 325px;
+    }
+
     .sectionImage__details {
       justify-self: flex-end;
       max-inline-size: 30.375rem;
@@ -113,6 +126,10 @@
     }
 
     .sectionImage__details--indicadores {
+      justify-self: flex-start;
+    }
+
+    .sectionImage__details--left {
       justify-self: flex-start;
     }
 

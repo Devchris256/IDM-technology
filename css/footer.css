@@ -34,10 +34,6 @@
   justify-content: space-between;
 }
 
-.footer__icon {
-  display: none;
-}
-
 .footer__divider {
   border: 1px solid var(--white);
 }
@@ -47,6 +43,12 @@
   font-size: 1rem;
   margin-block: 1.5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1025px) {

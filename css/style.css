@@ -4,6 +4,7 @@
 @import "./hero.css";
 @import "./section-image.css";
 @import "./section-simply.css";
+@import "./section-background.css";
 @import "./clientes.css";
 @import "./servicios.css";
 @import "./indicadores.css";
@@ -29,6 +30,7 @@
   --backgroundColor: #ededed;
   --gray: #e2e2e2;
   --white: #ffffff;
+  --blue: #4e9efb;
   --boxshadow: 0px 25px 25px 0 rgb(25, 131, 137, 0.3);
 }
 

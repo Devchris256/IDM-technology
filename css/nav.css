@@ -22,11 +22,11 @@
     padding: 0.5rem;
   }
 
-  .nav__link:not(.nav__link--white):first-of-type {
+  .nav__link[aria-current="page"]:not(.nav__link--white) {
     color: var(--primaryColor);
   }
 
-  .nav__link--white:first-of-type {
+  .nav__link--white[aria-current="page"] {
     box-shadow: 0 3px 0 0 var(--primaryColor);
   }
 

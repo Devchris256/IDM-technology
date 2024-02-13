@@ -1,0 +1,66 @@
+.sectionBackground {
+  margin-block: 2rem;
+  background: var(--primaryColor);
+}
+
+.sectionBackground {
+  background: var(--blue);
+}
+
+.sectionBackground__bg {
+  block-size: 200px;
+  background: url(../imagenes/ImgIdm-01.png) no-repeat center/cover;
+}
+
+.sectionBackground__details {
+  padding-block: 2.5rem;
+}
+
+.sectionBackground__text {
+  color: var(--white);
+  font-family: var(--mainFont);
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 700px) {
+  .sectionBackground {
+    display: flex;
+    margin-block: 3rem;
+  }
+  .sectionBackground__bg {
+    flex: 1;
+  }
+
+  .sectionBackground__content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .sectionBackground__details {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionBackground {
+    margin-block: 5rem;
+  }
+
+  .sectionBackground__text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .sectionBackground {
+    min-block-size: 300px;
+  }
+
+  .sectionBackground__bg {
+    block-size: inherit;
+  }
+}
