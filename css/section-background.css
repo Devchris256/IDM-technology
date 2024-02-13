@@ -12,6 +12,10 @@
   background: url(../imagenes/ImgIdm-01.png) no-repeat center/cover;
 }
 
+.sectionBackground__bg--bg2 {
+  background: url(../imagenes/ImgIdm-07.png) no-repeat center/cover;
+}
+
 .sectionBackground__details {
   padding-block: 2.5rem;
 }
@@ -30,6 +34,11 @@
     display: flex;
     margin-block: 3rem;
   }
+
+  .sectionBackground--flexReverse {
+    flex-direction: row-reverse;
+  }
+
   .sectionBackground__bg {
     flex: 1;
   }
