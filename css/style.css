@@ -11,6 +11,7 @@
 @import "./team.css";
 @import "./feed-back.css";
 @import "./redes.css";
+@import "./lideres.css";
 @import "./footer.css";
 
 :root {
@@ -52,7 +53,7 @@ body {
 }
 
 img {
-  vertical-align: middle;
+  vertical-align: bottom;
   max-inline-size: 100%;
 }
 
@@ -122,19 +123,20 @@ h3 {
 
 @media screen and (min-width: 900px) {
   .titleTwo {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .titleTwo {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
   .titleTwo {
     font-size: 1.875rem;
+    font-size: 2.375rem;
   }
 }
 
