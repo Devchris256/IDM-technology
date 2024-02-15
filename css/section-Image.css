@@ -24,17 +24,26 @@
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .sectionImage__figure--user {
   position: absolute;
   inset-inline-end: 0;
   max-inline-size: 25rem;
+  /* inline-size: 100%; */
   margin-block-end: 2rem;
   margin: 0;
   border-radius: unset;
   overflow: unset;
 }
+
+.sectionImage__figure--background {
+  background: url(../imagenes/ellipse-yellow.png) no-repeat left top 25%/25px
+      25px,
+    url(../imagenes/ellipase-purple-small.png) no-repeat right 20% top 5%/ 50px 50px;
+}
+
 @media screen and (min-width: 700px) {
   .sectionImage {
     padding-block: 5rem;
@@ -72,7 +81,6 @@
 
   .sectionImage__details {
     grid-column: 2/-1;
-    text-align: start;
 
     padding: 1.5rem;
     padding-inline-start: 2rem;
@@ -90,6 +98,11 @@
   @media screen and (min-width: 900px) {
     .sectionImage {
       padding-block: 8rem;
+    }
+    .sectionImage__figure--background {
+      background: url(../imagenes/ellipse-yellow.png) no-repeat left top 25%,
+        url(../imagenes/ellipase-purple-small.png) no-repeat right 20% top 15%,
+        url(../imagenes/ellipse-purple.png) no-repeat left top;
     }
 
     .sectionImage__figure {
@@ -116,7 +129,7 @@
 
   @media screen and (min-width: 1024px) {
     .sectionImage {
-      min-block-size: 325px;
+      min-block-size: 20.3125rem;
     }
 
     .sectionImage__details {
@@ -157,7 +170,7 @@
 
     .sectionImage__img--user {
       object-fit: contain;
-      max-block-size: 800px;
+      max-block-size: 50rem;
       display: block;
       text-align: right;
     }

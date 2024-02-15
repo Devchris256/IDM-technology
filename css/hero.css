@@ -16,10 +16,20 @@
   margin-block-end: 1rem;
 }
 
+.hero__details--animationLeft {
+  transform: translatex(-100%);
+  animation: left 0.9s forwards;
+}
+
 .hero__description {
   line-height: 2;
   font-size: 0.875rem;
   margin: 0;
+}
+
+.hero__img--animationRight {
+  transform: translatex(100%);
+  animation: right 0.9s forwards;
 }
 
 .hero__user {
@@ -38,6 +48,7 @@
     align-items: center;
     text-align: start;
     max-inline-size: none;
+    position: relative;
   }
 
   .hero__details {

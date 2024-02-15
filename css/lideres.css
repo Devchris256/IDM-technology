@@ -8,8 +8,8 @@
 .lideres__lider {
   flex-grow: 1;
   flex-shrink: 0;
-  min-inline-size: 120px;
-  max-inline-size: 130px;
+  min-inline-size: 7.5rem;
+  max-inline-size: 8.125rem;
   background: var(--white);
   aspect-ratio: 1/1;
   margin-inline-start: -1rem;
@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 400px) {
   .lideres__lider {
-    max-inline-size: 140px;
+    max-inline-size: 8.75rem;
   }
 
   .lideres__text {
@@ -72,7 +72,7 @@
 
 @media screen and (min-width: 700px) {
   .lideres__lider {
-    max-inline-size: 180px;
+    max-inline-size: 11.25rem;
   }
 
   .lideres__text {
@@ -86,7 +86,7 @@
 
 @media screen and (min-width: 900px) {
   .lideres__lider {
-    max-inline-size: 200px;
+    max-inline-size: 12.5rem;
   }
 
   .lideres__text {
@@ -96,11 +96,11 @@
 
 @media screen and (min-width: 1024px) {
   .lideres__lider {
-    max-inline-size: 220px;
+    max-inline-size: 13.75rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .lideres__lider {
-    max-inline-size: 240px;
+    max-inline-size: 15rem;
   }
 }

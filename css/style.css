@@ -23,7 +23,7 @@
   --mainFont: "Roboto", sans-serif;
   --secondaryFont: "Poppins", sans-serif;
   --titleOne: 900 1.25rem/1.5 var(--mainFont);
-  --titleTwo: 900 1.125rem/1.5 var(--mainFont);
+  --titleTwo: 900 1.25rem/1.5 var(--mainFont);
   --titleThree: 900 1rem/1.5 var(--mainFont);
   --button: 700 0.875rem/1.2 var(--secondaryFont);
   --titleColor: #1c9aa1;
@@ -101,15 +101,21 @@ h3 {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
   .titleOne {
     font-size: 1.5rem;
   }
 }
 
+@media screen and (min-width: 900px) {
+  .titleOne {
+    font-size: 1.875rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .titleOne {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -123,13 +129,13 @@ h3 {
   font: var(--titleTwo);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 400px) {
   .titleTwo {
     font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
   .titleTwo {
     font-size: 1.875rem;
   }
@@ -137,7 +143,6 @@ h3 {
 
 @media screen and (min-width: 1300px) {
   .titleTwo {
-    font-size: 1.875rem;
     font-size: 2.375rem;
   }
 }
@@ -146,20 +151,34 @@ h3 {
   font: var(--titleThree);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 400px) {
   .titleThree {
     font-size: 1.125rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
   .titleThree {
     font-size: 1.25rem;
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 900px) {
   .titleThree {
     font-size: 1.5rem;
+  }
+}
+
+/* ANIMACIONES */
+
+@keyframes right {
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes left {
+  to {
+    transform: translateX(0%);
   }
 }

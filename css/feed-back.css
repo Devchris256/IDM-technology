@@ -2,8 +2,8 @@
   max-inline-size: 50rem;
   inline-size: 100%;
   margin: auto;
-  margin-block-start: 4.375px;
-  block-size: 250px;
+  margin-block-start: 4.375rem;
+  block-size: 15.625rem;
   overflow: hidden;
   display: flex;
 }
@@ -121,8 +121,8 @@
   }
 
   .feedback__arrowImage {
-    inline-size: 24px;
-    block-size: 24px;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
   }
 
   .feedback__content {

@@ -2,17 +2,33 @@
   padding-block: 2rem;
 }
 
+.sectionSimply--backgroundLeft {
+  background: url(../imagenes/ellipse-1.png) no-repeat left top/ 150px 150px;
+}
+
+.sectionSimply--backgroundRight {
+  background: url(../imagenes/ellipse-2.png) no-repeat right center/ 150px 150px;
+}
+
 .sectionSimply--equipo {
   margin-block-start: 380px;
 }
 
 @media screen and (min-width: 700px) {
+  .sectionSimply--backgroundLeft {
+    background: url(../imagenes/ellipse-1.png) no-repeat left top/ contain;
+  }
+
+  .sectionSimply--backgroundRight {
+    background: url(../imagenes/ellipse-2.png) no-repeat right top / contain;
+  }
+
   .sectionSimply--equipo {
     margin-block-start: 0;
   }
 
   .sectionSimply {
-    padding-block: 4rem;
+    padding-block: 2rem;
   }
 }
 
@@ -49,7 +65,7 @@
 
 @media screen and (min-width: 1024px) {
   .sectionSimply {
-    padding-block: 6.25rem;
+    padding-block: 4rem;
   }
 
   .sectionSimply__text {

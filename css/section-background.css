@@ -8,7 +8,7 @@
 }
 
 .sectionBackground__bg {
-  block-size: 200px;
+  block-size: 12.5rem;
   background: url(../imagenes/ImgIdm-01.png) no-repeat center/cover;
 }
 
@@ -66,7 +66,7 @@
 
 @media screen and (min-width: 1025px) {
   .sectionBackground {
-    min-block-size: 300px;
+    min-block-size: 18.75rem;
   }
 
   .sectionBackground__bg {
